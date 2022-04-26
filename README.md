@@ -1,5 +1,6 @@
 # Stage 1: Business
-The idea of this project, is to develop a model, to predict heart disease given a medical dataset.
+The idea of this project, is to develop a model, to predict heart disease given medical datasets.
+We will try to predict heart disease, given data on another/other diseases.
 
 
 *Hypotheses:*
