@@ -23,7 +23,7 @@ We expect to find parameters, which is most likely to cause heart disease.
 # Stage 2: Data
 - We have three different datasets so we each took one and cleaned and prepared for modeling\
 **The 3 python notebooks are**
-- cardio set
-- dataset 2
-- heart dataset 1
+- Data1
+- Data2
+- Data3
 
