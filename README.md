@@ -27,3 +27,11 @@ We expect to find parameters, which is most likely to cause heart disease.
 - Data2
 - Data3
 
+# Stage 3: Artificial intelligence
+- We have three different datasets so we each took one prepared a model for each file.\
+**The 3 python notebooks are**
+- Data1
+- Data2
+- Data3
+
+The models can be found in the **deploy** folder.
