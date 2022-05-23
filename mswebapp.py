@@ -21,6 +21,10 @@ model3 = joblib.load('./deploy/data3_model.pkl')
 def predict():
     return render_template('prediction.html')
 
+@app.route('/graph')
+def visualization():
+    return render_template('visualization.html')
+
 @app.route('/predicted', methods=['GET', 'POST'])
 def predicted():
     if request.method == 'POST':
