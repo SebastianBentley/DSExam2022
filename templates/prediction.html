@@ -17,28 +17,48 @@
         
         <h2>Let the machine predict if you are at risk</h2>  
             <br>
+            
+        </h2>
+        </div>
+        </div>
+        <div class="container">
+            <div class="col-4">
             <form method="POST" action="/predicted" id=pform>
-                <div class="w-25 p-3">
-                    <div class="g-col-6">
+                    
                   Enter height <input class="form-control type="text" name="height"> <br>
                   Enter weight <input class="form-control type="text" name="weight"> <br>
                   Enter age <input class="form-control type="text" name="age"> <br>
-                  Enter cholesterol <input class="form-control type="text" name="cholesterol"> <br>
+                  Enter cholesterol level(1-3) <input class="form-control type="text" name="cholesterollvl"> <br>
                   Enter systolic blood pressure <input class="form-control type="text" name="systolic"> <br>
                   Enter dystolic blood pressure <input class="form-control type="text" name="dystolic"> <br>
-                  Enter pending <input class="form-control type="text" name="x1"> <br>
-                  Enter pending <input class="form-control type="text" name="x2"> <br>
-                  Enter pending <input class="form-control type="text" name="x1"> <br>
-                  Enter pending <input class="form-control type="text" name="x2"> <br>
-                  Enter pending <input class="form-control type="text" name="x1"> <br>
-                  Enter pending <input class="form-control type="text" name="x2"> <br>
-                  <input type="submit" name="submit" value="Submit">
-                    </div>
-                    
                 </div>
+                <div class="col-4">
+                  Dataset1:
+                  Enter gender <input class="form-control type="text" name="gender"> <br>
+                  Enter chest pain type(0-3) <input class="form-control type="text" name="chestpain"> <br>
+                  Enter exercise induced angina <input class="form-control type="text" name="exangina"> <br>
+                  Enter maximum heart rate <input class="form-control type="text" name="heartratemax"> <br>
+                  Enter ST depression <input class="form-control type="text" name="STDep"> <br>
+                  Enter trestbps <input class="form-control type="text" name="trestbps"> <br>
+                  Enter chol <input class="form-control type="text" name="cholesterol"> <br>
+                  Enter fbs <input class="form-control type="text" name="fbs"> <br>
+                  Enter restecg <input class="form-control type="text" name="restecg"> <br>
+                  Enter slope <input class="form-control type="text" name="slope"> <br>
+                  Enter ca <input class="form-control type="text" name="ca"> <br>
+                  Enter thal <input class="form-control type="text" name="thal"> <br>
+                </div>
+                <div class="col-4">
+                  Dataset2:
+                  Enter smoking <input class="form-control type="text" name="smoke"> <br>
+                  Enter stroke <input class="form-control type="text" name="stroke"> <br>
+                  Enter physical health <input class="form-control type="text" name="physicalHealth"> <br>
+                  Enter mental health <input class="form-control type="text" name="mentalHealth"> <br>
+                  Enter DiffWalking <input class="form-control type="text" name="diffWalking"> <br>
+                  Enter diabetic <input class="form-control type="text" name="diabetic"> <br>
+                  Enter skin cancer <input class="form-control type="text" name="skinCancer"> <br>
+                </div>
+                  <input type="submit" name="submit" value="Submit">
             </form>
-        </h2>
-        </div>
         </div>
 </body>
 </html>

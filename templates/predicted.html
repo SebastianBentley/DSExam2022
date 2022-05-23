@@ -7,9 +7,18 @@
     <body>       
             <br>
             <br>
+            <h1>Prediction</h1>
             <div>       
-            <h4>Your data: {{ content }} belongs to cluster <strong>{{ prediction }}</strong>
             <br>
+            <h3>Accuracy using {{content1}} in predicting heart disease is 100%</h3>
+            <h3>Accuracy using {{content2}} in predicting heart disease is 91%</h3>
+            <h3>Accuracy using {{content3}} in predicting heart disease is 72%</h3>
+            <br>
+
+            <p>Was heart disease shown in the first model using {{content1}} as input?:</p> {{prediction1}}
+            <p>Was heart disease shown in the second model using {{content2}} as input?:</p> {{prediction2}}
+            <p>Was heart disease shown in the third model using {{content3}} as input?: </p>{{prediction3}}
+
             <br>     
                 <div id='button'>
                   <form action="/predict" method="GET">
