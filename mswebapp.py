@@ -72,9 +72,9 @@ def predicted():
         predicted2 = model2.predict(X2)
         predicted3 = model3.predict(X3)
         
-        predicted1 = "<p style=\"{color:red}\">YES</p>" if predicted1[0] == 1 else "<p style=\"{color:green}\">NO</p>"
-        predicted2 = "<p style=\"{color:red}\">YES</p>" if predicted2[0] == 1 else "<p style=\"{color:green}\">NO</p>"
-        predicted3 = "<p style=\"{color:red}\">YES</p>" if predicted3[0] == 1 else "<p style=\"{color:green}\">NO</p>"
+        predicted1 = "YES" if predicted1[0] == 1 else "NO"
+        predicted2 = "YES" if predicted2[0] == 1 else "NO"
+        predicted3 = "YES" if predicted3[0] == 1 else "NO"
           
         return render_template("predicted.html", content1=X1, content2=X2, content3=X3,
                                prediction1=predicted1, prediction2=predicted2,
