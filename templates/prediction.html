@@ -15,16 +15,17 @@
             Heart disease estimater
         </h1> 
         
-        <h2>Let the machine predict if you are at risk</h2>  
+        <h2>Predict if your at risk</h2>  
             <br>
             
         </h2>
         </div>
         </div>
         <div class="container">
+          <div class="row">
             <div class="col-4">
             <form method="POST" action="/predicted" id=pform>
-                    
+                  <h4>Dataset 3</h4>
                   Enter height <input class="form-control type="text" name="height"> <br>
                   Enter weight <input class="form-control type="text" name="weight"> <br>
                   Enter age <input class="form-control type="text" name="age"> <br>
@@ -33,7 +34,7 @@
                   Enter dystolic blood pressure <input class="form-control type="text" name="dystolic"> <br>
                 </div>
                 <div class="col-4">
-                  Dataset1:
+                  <h4>Dataset 1</h4>
                   Enter gender <input class="form-control type="text" name="gender"> <br>
                   Enter chest pain type(0-3) <input class="form-control type="text" name="chestpain"> <br>
                   Enter exercise induced angina <input class="form-control type="text" name="exangina"> <br>
@@ -48,7 +49,7 @@
                   Enter thal <input class="form-control type="text" name="thal"> <br>
                 </div>
                 <div class="col-4">
-                  Dataset2:
+                  <h4>Dataset 2</h4>
                   Enter smoking <input class="form-control type="text" name="smoke"> <br>
                   Enter stroke <input class="form-control type="text" name="stroke"> <br>
                   Enter physical health <input class="form-control type="text" name="physicalHealth"> <br>
@@ -57,7 +58,10 @@
                   Enter diabetic <input class="form-control type="text" name="diabetic"> <br>
                   Enter skin cancer <input class="form-control type="text" name="skinCancer"> <br>
                 </div>
-                  <input type="submit" name="submit" value="Submit">
+                <input class="btn btn-dark" type="submit" name="submit" value="Submit">
+                <br>
+              </div>
+          
             </form>
         </div>
 </body>
