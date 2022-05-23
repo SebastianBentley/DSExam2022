@@ -35,3 +35,15 @@ We expect to find parameters, which is most likely to cause heart disease.
 - Data3
 
 The models can be found in the **deploy** folder.
+
+
+# Stage 4: Visualization
+- We've created a small webservice that takes user input, that fits to all of our models respectively.
+- To run the website open **website.ipynb** and run with Jupyter Notebook.
+- Open a browser and enter url **localhost:5000** to access prediction service.
+- Visualization of the data can be found after inputting data and pressing "submit"-button and after that pressing "visualization"-button.
+
+**Conceptual idea**
+Online VR-consultation
+
+
