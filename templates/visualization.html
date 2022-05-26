@@ -9,12 +9,15 @@
       crossorigin="anonymous"
     />
     <style>
-        .vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+      .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      a:link {
+  text-decoration: none;
 }
     </style>
   </head>
@@ -22,55 +25,75 @@
   <body style="background-color: #38afff0d">
     <br />
     <br />
-    <div align="center" style="background-color: #ffffff;">
+    <div align="center" style="background-color: #ffffff">
       <div class="container">
         <h1>Graphs</h1>
 
         <div class="row">
-            <br>
-            <h5>From dataset 1</h5>
-            <div class="col-6">
-                <a href="../static/ageChart.png" target="_blank">
-            <img src="../static/ageChart.png" alt="gg" width="600" />
-        </a>
+          <br />
+          <h5>From dataset 1</h5>
+          <div class="col-6">
+            <a href="../static/ageChart.png" target="_blank">
+              <img src="../static/ageChart.png" alt="gg" width="600" />
+            </a>
           </div>
           <div class="col-6">
             <a href="../static/BMIAgeHeart.png" target="_blank">
-
-            <img src="../static/BMIAgeHeart.png" alt="gg"width="700"/>
-        </a> </div>
+              <img src="../static/BMIAgeHeart.png" alt="gg" width="700" />             
+            </a>
+          </div>
           <h5>From dataset 2</h5>
           <div class="col-6">
             <a href="../static/ageChartDS1.png" target="_blank">
-
-            <img src="../static/ageChartDS1.png" alt="gg" width="600" />
-        </a> </div>
-          <div class="col-6">            <a href="../static/hrChart.png" target="_blank">
-
-            <img src="../static/hrChart.png" alt="gg" width="600"/>
-        </a></div>
+              <img src="../static/ageChartDS1.png" alt="gg" width="600" />
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="../static/hrChart.png" target="_blank">
+              <img src="../static/hrChart.png" alt="gg" width="600" />
+            </a>
+          </div>
           <h5>From dataset 3</h5>
           <div class="col-4">
             <a href="../static/ageChart3.png" target="_blank">
-
-            <img src="../static/ageChart3.png" alt="gg" />
-        </a></div>
+              <img src="../static/ageChart3.png" alt="gg" />
+              <p style="font-size: 10px; color: black;">Shows the correlation between Age and Cardiovascular disease</p>
+            </a>
+          </div>
           <div class="col-4">
             <a href="../static/bmiBar3.png" target="_blank">
-
-            <img src="../static/bmiBar3.png" alt="gg" />
-        </a> </div>
+              <img src="../static/bmiBar3.png" alt="gg" />
+              <p style="font-size: 10px; color: black;">Shows the correlation between BMI and Cardiovascular disease</p>
+            </a>
+          </div>
           <div class="col-4">
             <a href="../static/bmiPie3.png" target="_blank">
-
-            <img src="../static/bmiPie3.png" alt="gg" />
-        </a> </div>
-          
+              <img src="../static/bmiPie3.png" alt="gg" />
+              <p style="font-size: 10px; color: black;">Shows the correlation between BMI and Cardiovascular disease in a pie chart</p>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="../static/age_obese_chart.png" target="_blank">
+              <img src="../static/age_obese_chart.png" alt="gg" />
+              <p style="font-size: 10px; color: black;">Shows the correlation of age + obesity on Cardiovascular disease</p>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="../static/effect_systolic.png" target="_blank">
+              <img src="../static/effect_systolic.png" alt="gg" />
+              <p style="font-size: 10px; color: black;">Shows the correlation between Systolic blod pressure and Cardiovascular disease</p>
+            </a>
+          </div>
         </div>
       </div>
       <div id="button">
         <form action="/predict" method="GET">
-          <input class="btn btn-dark" type="submit" name="submit" value="make another prediction" />
+          <input
+            class="btn btn-dark"
+            type="submit"
+            name="submit"
+            value="make another prediction"
+          />
         </form>
       </div>
     </div>
