@@ -43,7 +43,7 @@ The models can be found in the **deploy** folder.
 - Open a browser and enter url **localhost:5000** to access prediction service.
 - Visualization of the data can be found after inputting data and pressing "submit"-button and after that pressing "visualization"-button.
 
-**Visualization Techniques**
+**Visualization Techniques**\
 We have used several graphs, both 2D and 3D, to visualize our data, in simple to more complicated ways.
 We created images to show relationships and patterns of data, that otherwise would not be clear.
 For our business case, a doctor could use these graphs to indicate to a patient, were they lie on a spectrum, to show their target goal to prevent heart disease.
