@@ -1,28 +1,88 @@
 <!DOCTYPE html>
 <html lang=“en”>
    <head>
-        <title> Predicted </title>
+        <title> Predicted </title>    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
     </head>
     
-    <body>       
+    <body style="background-color: #38afff0d">   
+      <br>
+            <br>  
+            <div class="container" style="background-color: #ffffff;">
+            <h1 align="center">Prediction</h1>
             <br>
             <br>
-            <h1>Prediction</h1>
-            <div>       
-            <br>
-            <h3>Accuracy using {{content1}} in predicting heart disease is 100%</h3>
-            <h3>Accuracy using {{content2}} in predicting heart disease is 91%</h3>
-            <h3>Accuracy using {{content3}} in predicting heart disease is 72%</h3>
+            <div>    
+              <div style="box-shadow: 2px 2px 2px 2px #888888;">  
             <br>
 
-            <p>Was heart disease shown in the first model using {{content1}} as input?:</p> {{prediction1}}
-            <p>Was heart disease shown in the second model using {{content2}} as input?:</p> {{prediction2}}
-            <p>Was heart disease shown in the third model using {{content3}} as input?: </p>{{prediction3}}
+            <h3  align="center">Accuracy using fields below in predicting heart disease is 100%</h3>
+            <table class="table">
+              <th>Age</th>
+              <th>Sex</th>
+              <th>CP</th>
+              <th>Trestbps</th>
+              <th>Cholesterol</th>
+              <th>FBS</th>
+              <th>Restech</th>
+              <th>Thalach</th>
+              <th>Exang</th>
+              <th>Oldpeak</th>
+              <th>Slope</th>
+              <th>Ca</th>
+              <th>Thal</th>
+              <tbody>
+                <td>{{content1[0][0]}}</td> <td>{{content1[0][1]}}</td> <td>{{content1[0][2]}}</td> <td>{{content1[0][3]}}</td> <td>{{content1[0][4]}}</td> <td>{{content1[0][5]}}</td><td>{{content1[0][6]}}</td> <td>{{content1[0][7]}}</td> <td>{{content1[0][8]}}</td> <td>{{content1[0][9]}}</td> <td>{{content1[0][10]}}</td> <td>{{content1[0][11]}}</td><td>{{content1[0][12]}}</td>
+              </tbody>
+            </table>   
+                    
+            <h4  align="center">Was heart disease shown in the first model? <u>{{prediction1}}</u></h4><br> </div>   <br><br>
+<div style="box-shadow: 2px 2px 2px 2px #888888;"><br>
+            <h3  align="center">Accuracy using fields below in predicting heart disease is 91%</h3>
+            <table class="table">
+              <th>BMI</th>
+              <th>Smoking</th>
+              <th>Stroke</th>
+              <th>Physical health</th>
+              <th>Mental Health</th>
+              <th>Diff walking</th>
+              <th>Age category</th>
+              <th>Diabetic</th>
+              <th>Skin cancer</th>
+              <tbody>
+                <td>{{content2[0][0]}}</td> <td>{{content2[0][1]}}</td> <td>{{content2[0][2]}}</td> <td>{{content2[0][3]}}</td> <td>{{content2[0][4]}}</td> <td>{{content2[0][5]}}</td><td>{{content2[0][6]}}</td> <td>{{content2[0][7]}}</td><td>{{content2[0][8]}}</td>
+              </tbody>
+            </table>
+            <h4 align="center">Was heart disease shown in the second model? <u>{{prediction2}}</u></h4> 
+              <br>
+</div>
+              <br><br>
 
-            <br>     
+              <div style="box-shadow: 2px 2px 2px 2px #888888;"><br>
+            <h3 align="center">Accuracy using fields below in predicting heart disease is 72%</h3>
+            <table class="table">
+              <th>BMI</th>
+              <th>Age</th>
+              <th>cholesterol</th>
+              <th>ap_lo</th>
+              <th>ap_hi</th>
+              <th>Obese</th>
+
+              <tbody>
+                <td>{{content3[0][0]}}</td> <td>{{content3[0][1]}}</td> <td>{{content3[0][2]}}</td> <td>{{content3[0][3]}}</td> <td>{{content3[0][4]}}</td> <td>{{content3[0][5]}}</td>
+              </tbody>
+            </table>
+            <h4  align="center">Was heart disease shown in the third model? <u>{{prediction3}}</u></h4>
+            <br>
+            </div>
+            <br>
+
+
+            <br> <div align="center">    
                 <div id='button'>
                   <form action="/predict" method="GET">
-                     <input type=submit name=submit value='make another prediction'>
+                     <input class="btn btn-dark" type=submit name=submit value='make another prediction'>
                   </form>
                 </div>
                 
@@ -30,10 +90,12 @@
 
                 <div id='button'>
                   <form action="/graph" method="GET">
-                     <input type=submit name=submit value='---- Visualization ----'>
+                     <input class="btn btn-dark" type=submit name=submit value='---- Visualization ----'>
                   </form>
                 </div>
              </h4>
+             <div>
              </div>   
+            
     </body>
 </html>
